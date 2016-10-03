@@ -8,6 +8,6 @@ shinyServer(function(input, output, session) {
   output$filteredData = renderPrint(data2plot())
   
   output$petalLbW = renderPlot({
-    plot(Petal.Length~Petal.Width,data=data2plot(),pwd=Sepal.Width)
+    plot(Petal.Length~Petal.Width,data=data2plot())
   })
 })
